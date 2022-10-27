@@ -7,13 +7,13 @@ function Home() {
 
   return (
     <div>
-      <h1>Home</h1>;
+      <h1>Home</h1>
       <button 
         onClick={() => {
           Navigate('/login');
         }}
       >
-        Logout
+        Login
       </button>
     </div>
   )

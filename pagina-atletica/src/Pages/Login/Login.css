@@ -7,11 +7,12 @@
 }
 
 .base{
-    height: 100%;
+    height: 100vh;
     display: grid;
     align-items: center;
     justify-content: center;
     flex-grow: 2;
+    background-color: #003459;
 }
 
 .inputs{
@@ -19,4 +20,12 @@
     flex-direction: column;
     margin-left: 16px;
     margin-right: 16px;
+}
+
+.loginbox{
+    border-radius: 30px;
+    background: #FFFF;
+    padding: 20px;
+    width: 54.82vw;
+    height: 50vh;
 }
