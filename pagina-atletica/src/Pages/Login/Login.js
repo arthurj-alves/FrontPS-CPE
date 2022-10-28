@@ -1,8 +1,11 @@
 import React from "react";
 import { Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
+
+  const Navigate = useNavigate();
 
   return (
 
@@ -24,7 +27,11 @@ function Login() {
               <p></p>
               <Button variant="primary">Entrar</Button>{' '}
               <p></p>
-              <Button variant="secondary">Cadastre-se</Button>{' '}
+              <Button 
+              onClick={() => {
+                Navigate('/cadastro');
+              }}
+              variant="secondary">Cadastre-se</Button>{' '}
             </Form>
         </div>
       </div>
