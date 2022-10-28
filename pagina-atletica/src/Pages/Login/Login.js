@@ -12,7 +12,6 @@ function Login() {
           <div className="logo">            
             <img src="/images/Logo_Atletica.png" alt="Logo" />
             <img src="/images/Atletica_Generica.png" alt="Atlética Genérica" />
-
           </div>
             <Form className="inputs">
               <Form.Group className="mb-3" controlId="formBasicEmail">
