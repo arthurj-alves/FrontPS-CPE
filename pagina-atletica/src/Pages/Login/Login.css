@@ -7,10 +7,14 @@
     width: 100%;
 }
 .logo{
-    
+    display: blocks;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+
 }
 .base{
-    height: 100vh;
+    height: 100%;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -21,22 +25,27 @@
 .inputs{
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
     margin-left: 16px;
     margin-right: 16px;
 }
 
 .loginbox{
 
-    border-radius: 30px;
+    justify-content: center;
+
+    border-radius: 20%;
     background: #FFFF;
-    padding: 20px;
-    width: 593px;
-    height: 717px;
+    padding: 5%;
+    width: 100%;
+    max-width: 593px;
+
+    height: 600px;
     left: 663px;
     top: 105px;
  
 background: #FFFFFF;
-border: 1px solid #000000;
+border: 2px solid #000000;
 border-radius: 102px;
 
 }
