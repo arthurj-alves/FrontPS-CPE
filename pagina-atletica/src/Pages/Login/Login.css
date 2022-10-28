@@ -1,11 +1,14 @@
 .container{
     display: flex;
     flex-direction: column;
-    max-width: 423px;
+    max-width: 593px;
+    align-items: center;
     flex-grow: 1;
     width: 100%;
 }
-
+.logo{
+    
+}
 .base{
     height: 100vh;
     display: grid;
@@ -23,9 +26,17 @@
 }
 
 .loginbox{
+
     border-radius: 30px;
     background: #FFFF;
     padding: 20px;
-    width: 54.82vw;
-    height: 50vh;
+    width: 593px;
+    height: 717px;
+    left: 663px;
+    top: 105px;
+ 
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 102px;
+
 }

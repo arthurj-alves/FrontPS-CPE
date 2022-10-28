@@ -12,6 +12,7 @@ function Login() {
           <div className="logo">            
             <img src="/images/Logo_Atletica.png" alt="Logo" />
             <img src="/images/Atletica_Generica.png" alt="Atlética Genérica" />
+
           </div>
             <Form className="inputs">
               <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -21,8 +22,8 @@ function Login() {
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Control type="password" placeholder="Senha" />
               </Form.Group>
-
-              <Button variant="primary">Login</Button>{' '}
+              <p></p>
+              <Button variant="primary">Entrar</Button>{' '}
               <p></p>
               <Button variant="secondary">Cadastre-se</Button>{' '}
             </Form>
