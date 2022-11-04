@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Perfil(){
     return (
         <div>
-            <h1>Perfil</h1>;
-            <Link to="/perfil">Perfil</Link>;
+            <h1>Produtos</h1>
+            <Link to="/perfil">Perfil</Link>
         </div>
     )  
 }  
