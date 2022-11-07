@@ -1,12 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../../Components/Header/Header"; 
 
 function Home() {
 
   const Navigate = useNavigate();
 
   return (
-    <div>
+    <>
+      <Header />
+    </>
+/*     <div>
       <h1>Home</h1>
       <button 
         onClick={() => {
@@ -15,7 +19,7 @@ function Home() {
       >
         Login
       </button>
-    </div>
+    </div> */
   )
 }
 

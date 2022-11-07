@@ -1,0 +1,14 @@
+header{
+    flex: 1;
+    background: #fff;
+    padding: 1% 5%;
+
+    display: flex;
+    justify-content:  space-between;
+}
+
+header .header_logo{
+    color: #2b2b2d;
+    font-weight: normal;
+    font-size: 30px;
+}
