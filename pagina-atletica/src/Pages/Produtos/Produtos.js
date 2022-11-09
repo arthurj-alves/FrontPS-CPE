@@ -1,8 +1,8 @@
-
 import React from "react";
 import Header from "../../Components/Header/Header";
 import Cards from "../../Components/Cards/Cards";
 import { Link } from "react-router-dom";
+import Produtos from ".";
 
 
 const bone = {
@@ -29,3 +29,5 @@ function Perfil(){
         </div>
     )  
 }  
+
+export default Produtos;
