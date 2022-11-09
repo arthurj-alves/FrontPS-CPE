@@ -20,7 +20,10 @@ function Header(){
   return (
     <header>
       <div className='header_logo_container'>
-        <h2 className='header_logo'>Atlética</h2>
+        <div className='logoNome'>
+        <img className='header_logo' src='./images/LogoAtlética.png'/>
+        <h1>Atlética</h1>
+        </div>
         <FiMenu size={24} onClick={() => {
           setMenuOpen(!menuOpen)
         }}/>
@@ -41,12 +44,12 @@ function Header(){
           <li><Button 
           onClick={() => {
             Navigate('/login');
-          }}variant="primary">Login</Button>{' '}</li>
+          }}variant="secondary">Login</Button>{' '}</li>
           
           <li><Button 
           onClick={() => {
             Navigate('/cadastro');
-          }}variant="secondary">Cadastrar</Button>{' '}</li>
+          }}variant="success">Cadastrar</Button>{' '}</li>
 
         </ul>
       </nav>

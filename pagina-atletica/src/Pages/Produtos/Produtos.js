@@ -1,11 +1,30 @@
 import React from "react";
+import Header from "../../Components/Header/Header";
+import Cards from "../../Components/Cards/Cards";
 import { Link } from "react-router-dom";
+
+
+const bone = {
+    nome: "Boné",
+    descricao: "Azul e Preto",
+    imagem: "./images/bone.jpg",
+};
+
+const blusa = {
+    nome: "Blusa da Atlética",
+    descricao: "G, M, P e PP",
+    imagem: "./images/blusa.jpg"
+}
 
 function Perfil(){
     return (
         <div>
-            <h1>Produtos</h1>
-            <Link to="/perfil">Perfil</Link>
+        <Header/>
+            <h1>Nossa loja!</h1>
+            <div className="produtos">  
+                <Cards produto={bone}/>
+                <Cards produto={blusa}/>
+            </div>
         </div>
     )  
 }  
