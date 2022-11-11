@@ -13,7 +13,7 @@ function Login() {
       <div className="loginbox">
         <div className="container">
           <div className="logo">
-            <img src="/images/Logo_Atletica.png" alt="Logo" />
+            <img className="icon" src="/images/Logo_Atletica.png" alt="Logo" />
             <img src="/images/Atletica_Generica.png" alt="Atlética Genérica" />
           </div>
           <Form className="inputs">

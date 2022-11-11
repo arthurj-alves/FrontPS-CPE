@@ -1,0 +1,12 @@
+.produtos{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (max-width: 1100px){
+    
+
+}

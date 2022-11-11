@@ -5,10 +5,14 @@ import Home from "./Pages/Home"
 import Login from "./Pages/Login"
 import Cadastro from "./Pages/Cadastro"
 import Produtos from "./Pages/Produtos"
+import Header from "./Components/Header/Header";
 
 function Rota(){
     return(
+
+
         <Router>
+            <Header />
             <Routes>
                 <Route path="/login" element = {<Login/>} />
                 <Route path="/cadastro" element ={<Cadastro/>} />

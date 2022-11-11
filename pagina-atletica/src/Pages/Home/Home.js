@@ -8,9 +8,7 @@ function Home() {
   const Navigate = useNavigate();
 
   return (
-    <>
-      <Header />
-    </>
+    <h1> Ola</h1>
 /*     <div>
       <h1>Home</h1>
       <Button 

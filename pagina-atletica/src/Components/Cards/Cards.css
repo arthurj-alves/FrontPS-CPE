@@ -1,0 +1,26 @@
+/* .botoesCard{
+    justify-content: space-around;
+    display: flex;
+    height: 100%;
+}*/
+.containerCard{
+    display: flex;
+    gap: 30px;
+}
+
+.precos{
+    display: flex;
+    align-items: baseline;
+}
+
+.precoCheio{
+    font-size: medium;
+    font-style: inherit;
+    text-decoration: line-through;
+}
+
+.precoDesconto{
+    font-size: x-large;
+    font-weight: bold;
+
+}
