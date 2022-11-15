@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Header from "../../Components/Header/Header"; 
 
@@ -7,15 +8,14 @@ function Home() {
   const Navigate = useNavigate();
 
   return (
-    <>
-      <Header />
-    </>
+    <h1> Ola</h1>
 /*     <div>
       <h1>Home</h1>
-      <button 
+      <Button 
         onClick={() => {
           Navigate('/login');
         }}
+        variant="secondary"
       >
         Login
       </button>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../../Components/Header/Header';
 /* import './Cadastro.css'; */
 
 
@@ -21,6 +22,8 @@ function Cadastro() {
   }
   
   return (
+
+
     <div className="paginaCadastro">
 
  

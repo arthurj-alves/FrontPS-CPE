@@ -9,5 +9,5 @@ html,
 body,
 div#root{
     background-color: #00a6e80a;
-    height: auto;
+    height: 100%;
 }

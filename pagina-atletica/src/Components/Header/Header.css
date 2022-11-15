@@ -23,8 +23,7 @@ header .header_logo_container{
 
 .logoNome{
     display: flex;
-    justify-content: space-between;
-
+    gap: 10px;
 }
 
 .header_logo{

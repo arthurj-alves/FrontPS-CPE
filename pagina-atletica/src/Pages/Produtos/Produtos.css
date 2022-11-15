@@ -1,0 +1,19 @@
+.titleProdutos{
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.produtos{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (max-width: 1100px){
+    
+
+}
