@@ -32,7 +32,7 @@ function Perfil() {
 
     return (
         
-                    <div className="card-container">
+                    <div className="perfil-container">
         
                         <div className="top">
                             <div className="image-container">
