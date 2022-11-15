@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     max-width: 593px;
@@ -6,47 +6,46 @@
     flex-grow: 1;
     width: 100%;
 }
-.logo{
-    display: block;
-    margin-top: 10%;
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
     margin-left: 10%;
     margin-right: 5%;
-
+    gap: 10px;
+    align-items: center;
 }
 
-.base{
+
+.base {
     height: 100%;
-    display: grid;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 2;
     background-color: #003459;
 }
 
-.inputs{
+.inputs {
     display: flex;
+    width: 140%;
     flex-direction: column;
     margin-top: 10%;
     margin-left: 16px;
     margin-right: 16px;
 }
 
-.loginbox{
+.loginbox {
 
     justify-content: center;
-
     border-radius: 20%;
     background: #FFFF;
     padding: 5%;
-    width: 100%;
-    max-width: 593px;
-
-    height: 600px;
-    left: 663px;
-    top: 105px;
- 
-background: #FFFFFF;
-border: 2px solid #000000;
-border-radius: 102px;
+    width: 20%;
+    border: 2px solid #000000;
+    border-radius: 102px;
 
 }

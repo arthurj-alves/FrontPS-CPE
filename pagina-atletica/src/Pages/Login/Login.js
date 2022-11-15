@@ -3,7 +3,7 @@ import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import api from "../../Services/api"
-import {login} from "../../services/auth"
+import {login} from "../../Services/auth"
 
 function Login() {
 
@@ -16,9 +16,10 @@ function Login() {
     e.preventDefault();
     try{
         const response = await api.post('/login',{email,password});
+        console.log(response);
         alert("Bem vindo", response.data.user.name)
         login(response.data.AccessToken)
-        navigate("/profile")
+        Navigate("/perfil")
         console.log(response);
     } catch(error){
         console.warn(error);
