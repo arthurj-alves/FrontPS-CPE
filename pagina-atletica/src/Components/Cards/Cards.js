@@ -23,7 +23,7 @@ function Cards(props) {
         />
       }
       actions={[
-        <ShoppingCartOutlined key="comprar" />,
+        <ShoppingCartOutlined key="comprar" onClick={console.log("deubom")}/>,
         <HeartOutlined key="favoritar" />,
 
       ]
