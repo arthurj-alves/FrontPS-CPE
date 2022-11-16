@@ -11,6 +11,14 @@ import Meta from 'antd/lib/card/Meta';
 
 function Cards(props) {
 
+  const [favorito, setFavorito] = useState(false);
+
+
+  function handleFavorito(){
+    setFavorito((prev)=>!prev);
+  }
+
+
   return (
 
 
@@ -23,8 +31,8 @@ function Cards(props) {
         />
       }
       actions={[
-        <ShoppingCartOutlined key="comprar" onClick={console.log("deubom")}/>,
-        <HeartOutlined key="favoritar" />,
+        <ShoppingCartOutlined key="comprar" onClick={() => console.log("deubom")}/>,
+        favorito ?  <HeartFilled key="favoritarTrue" onClick={handleFavorito}/> : <HeartOutlined key="favoritarFalse" onClick={handleFavorito}/>
 
       ]
       }

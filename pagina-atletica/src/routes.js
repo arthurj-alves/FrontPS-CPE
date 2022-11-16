@@ -6,6 +6,7 @@ import Login from "./Pages/Login"
 import Cadastro from "./Pages/Cadastro"
 import Produtos from "./Pages/Produtos"
 import Header from "./Components/Header/Header";
+import HeaderPrivado from "./Components/HeaderPrivado/HeaderPrivado";
 import { isAuthenticated } from "./Services/auth";
 
 const PrivateRoute = ({ redirectPath = '/login' }) => {
@@ -16,18 +17,29 @@ const PrivateRoute = ({ redirectPath = '/login' }) => {
     return <Outlet />;
 };
 
+const Layout = () => {
+    return (
+        <>
+        {isAuthenticated() ? <HeaderPrivado /> : <Header/>}
+            
+            <Outlet />;
+        </>
+    )
+};
+
 function Rota() {
     return (
         <Router>
-            <Header />
             <Routes>
-                <Route element={<PrivateRoute />}>
-                    <Route path="/perfil" element={<Perfil />} />
+                <Route element={<Layout />}>
+                    <Route element={<PrivateRoute />}>
+                        <Route path="/perfil" element={<Perfil />} />
+                    </Route>
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/produtos" element={<Produtos />} />
+                    <Route path="/" element={<Home />} />
                 </Route>
-                <Route path="/login" element={<Login />} />
-                <Route path="/cadastro" element={<Cadastro />} />
-                <Route path="/produtos" element={<Produtos />} />
-                <Route path="/" element={<Home />} />
             </Routes>
         </Router>
     )

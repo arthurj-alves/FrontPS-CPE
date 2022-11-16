@@ -5,21 +5,10 @@ import Header from "../../Components/Header/Header";
 
 function Home() {
 
-  const Navigate = useNavigate();
+  const Navigate = useNavigate()
 
   return (
-    <h1> Ola</h1>
-/*     <div>
-      <h1>Home</h1>
-      <Button 
-        onClick={() => {
-          Navigate('/login');
-        }}
-        variant="secondary"
-      >
-        Login
-      </button>
-    </div> */
+    <h1>Ola</h1>
   )
 }
 

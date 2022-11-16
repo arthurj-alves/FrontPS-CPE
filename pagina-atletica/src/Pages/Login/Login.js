@@ -5,6 +5,7 @@ import "./Login.css";
 import api from "../../Services/api"
 import {login} from "../../Services/auth"
 
+
 function Login() {
 
   const [email, setEmail] = useState();
@@ -16,16 +17,16 @@ function Login() {
     e.preventDefault();
     try{
         const response = await api.post('/login',{email,password});
-        console.log(response);
         alert("Bem vindo", response.data.user.name)
-        login(response.data.AccessToken)
+        login(response.data)
         Navigate("/perfil")
-        console.log(response);
+        window.location.reload(); 
     } catch(error){
         console.warn(error);
         alert(error.message);
     }
 }
+
 
 
   return (

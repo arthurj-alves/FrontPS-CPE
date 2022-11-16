@@ -2,43 +2,26 @@ import React, { useState } from 'react';
 import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import api from "../../Services/api"
-import { login } from "../../Services/auth"
 import './Cadastro.css';
 
 
 function Cadastro() {
 
-  const [Nome, setNome] = useState();
+  const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState()
   const Navigate = useNavigate();
-  {/* Caracteres que são aceitos no input type="number" */ }
-  const [symbolsArr] = useState(["e", "E", "+", "-", ".", ","]);
 
-  function handleInputChange(e) {
-
-    const key = e.target.name;
-
-    const newNome = { ...Nome };
-
-    newNome[key] = e.target.value;
-
-    setNome(newNome);
-    console.log(newNome);
-  }
-
-  async function handleLogin(e) {
+  async function handleCadastro(e) {
     e.preventDefault();
     try {
-      const response = await api.post('/login', { email, password });
-      console.log(response);
-      alert("Bem vindo", response.data.user.name)
-      login(response.data.AccessToken)
-      Navigate("/perfil")
-      console.log(response);
+      const response = await api.post('/user', { email, name, password });
+      console.log(response.data);
+      alert("Cadastro completo!")
+      Navigate("/login")
     } catch (error) {
       console.warn(error);
-      alert(error.message);
+      alert("Ocorreu uma falha no servidor " + error.message);
     }
   }
 
@@ -54,22 +37,22 @@ function Cadastro() {
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control type="name"
                 placeholder="Nome Completo"
-                onChange={handleInputChange} />
+                onChange={(e)=>setName(e.target.value)} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control type="email"
                 placeholder="Email"
-                onChange={handleInputChange} />
+                onChange={(e)=>setEmail(e.target.value)} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Control type="password"
                 placeholder="Senha"
-                onChange={handleInputChange} />
+                onChange={(e)=>setPassword(e.target.value)} />
             </Form.Group>
             <p></p>
-            <Button variant="primary" onClick={handleLogin}>Finalizar cadastro</Button>{' '}
+            <Button variant="primary" onClick={handleCadastro}>Finalizar cadastro</Button>{' '}
             <p></p>
           </Form>
         </div>
